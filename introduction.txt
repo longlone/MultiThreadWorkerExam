@@ -1,0 +1,22 @@
+quick introduction:
+
+classes:
+- Task: 
+	The task gonna be executed. here it just does Thread.sleep & System.out.println  
+
+- TaskDispatcher: 
+	The dispatcher represent an processing element of a responsibility chain, or a 
+	level in the organization. It contains a worker queue and a pointer to the next
+	level dispatcher. Task would be submitted into a dispatcher, and will escalate 
+	to next level if cannot be handled by itself.
+- Employee:
+	The worker thread to execute tasks. An employee must belong to a TaskDispatcher 
+	and waiting for task dispatching. After the task is finished, the employee would 
+	put itself back to the task dispatcher queue.
+  
+- App:
+	The context setting up 3 level of dispatcher, the employees within each level, 
+	and 1 TaskGenerator.
+	
+- TaskGenerator:
+	Generating task periodically.
