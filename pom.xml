@@ -36,11 +36,11 @@
             </execution>
           </executions>
         <configuration>
-          <mainClass>com.example.Main</mainClass>
-          <arguments>
+          <mainClass>joey.hsiao.App</mainClass>
+          <!-- <arguments>
             <argument>foo</argument>
             <argument>bar</argument>
-          </arguments>
+          </arguments> -->
         </configuration>
       </plugin>
     </plugins>
